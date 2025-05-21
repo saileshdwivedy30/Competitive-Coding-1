@@ -1,6 +1,17 @@
 # Design Min Heap
 
 class MinHeap:
+"""
+Time Complexity:
+      - insert(val): O(log n) due to heapify up
+      - getMin(): O(1), accessing root element
+      - extractMin(): O(log n) due to heapify down
+      - _heapify_up(index): O(log n) moving up the heap
+      - _heapify_down(index): O(log n) moving down the heap
+      - _swap(i, j), _parent_index(i), _left_child_index(i), _right_child_index(i): O(1)
+Space Complexity:
+      - O(n) to store n elements in the heap list
+"""
     def __init__(self):
         self.heap = []
 
