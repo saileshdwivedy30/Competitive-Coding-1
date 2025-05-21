@@ -1,5 +1,8 @@
 # Missing_number_sorted_array
 
+# TC - O(log n)
+# SC - O(1)
+
 def missingNumber(arr):
     # code here
 
